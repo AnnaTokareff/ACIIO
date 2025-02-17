@@ -73,17 +73,6 @@ def validate_and_clean_prompt(new_prompt: str, initial_prompt: str) -> str:
     if not new_prompt or len(new_prompt) < 10:
         logging.warning("Generated prompt too short or empty, keeping initial prompt")
         return initial_prompt
-
-    # if not new_prompt.lower().startswith("summarize the dialogue"):
-    #     new_prompt = "Summarize the dialogue: " + new_prompt
-    #     logging.info("Added standard prefix to prompt")
-
-    # Ограничение длины
-    # words = new_prompt.split()
-    # if len(words) > 30:
-    #     new_prompt = " ".join(words[:30])
-    #     logging.info("Truncated prompt to 30 words")
-
     return new_prompt
 
 
@@ -461,15 +450,6 @@ def save_and_visualize_metrics(output_path: str, iteration: int,
         'Best Total Score'
     ]
     
-    # metrics_data = {
-    #     'Semantic Similarity': [m['scores']['avg_semantic_similarity'] for m in all_iterations_history],
-    #     'Critic Score': [m['scores']['avg_critic_score']/40 for m in all_iterations_history],
-    #     'Total Score': [m['scores']['total_score'] for m in all_iterations_history],
-    #     'Best Semantic Similarity': [m['scores']['avg_best_semantic_similarity'] for m in all_iterations_history],
-    #     'Best Critic Score': [m['scores']['avg_best_critic_score']/40 for m in all_iterations_history],
-    #     'Best Total Score': [m['scores']['best_total_score'] for m in all_iterations_history]
-    # }
-
     metrics_data = {
     'Semantic Similarity': [m['scores']['avg_semantic_similarity'] for m in all_iterations_history],
     'Critic Score': [m['scores']['avg_critic_score']/40 for m in all_iterations_history],
