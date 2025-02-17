@@ -17,7 +17,7 @@ Tested on **three NLP tasks**:
 - Investigating **prompt optimization** for structured tasks.  
 
 ## **Acknowledgments**  
-Inspired by [**Self-Refine**](https://github.com/madaan/self-refine.git) and [**PACE**](https://arxiv.org/html/2308.10088v2), but developed **entirely from scratch** with new methodologies and architectures.
+Inspired by [**Self-Refine**](https://github.com/madaan/self-refine.git) and [**PACE**](https://arxiv.org/html/2308.10088v2), but my code was developed **entirely from scratch** with new methodologies and architectures.
 
 ```sql
 @misc{madaan2023selfrefine,
