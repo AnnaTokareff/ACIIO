@@ -19,3 +19,25 @@ Tested on **three NLP tasks**:
 ## **Acknowledgments**  
 Inspired by [**Self-Refine**](https://github.com/madaan/self-refine.git) and [**PACE**](https://arxiv.org/html/2308.10088v2), but developed **entirely from scratch** with new methodologies and architectures.
 
+```sql
+@misc{madaan2023selfrefine,
+      title={Self-Refine: Iterative Refinement with Self-Feedback}, 
+      author={Aman Madaan and Niket Tandon and Prakhar Gupta and Skyler Hallinan and Luyu Gao and Sarah Wiegreffe and Uri Alon and Nouha Dziri and Shrimai Prabhumoye and Yiming Yang and Sean Welleck and Bodhisattwa Prasad Majumder and Shashank Gupta and Amir Yazdanbakhsh and Peter Clark},
+      year={2023},
+      eprint={2303.17651},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+```
+
+```sql
+@misc{dong2024paceimprovingpromptactorcritic,
+      title={PACE: Improving Prompt with Actor-Critic Editing for Large Language Model}, 
+      author={Yihong Dong and Kangcheng Luo and Xue Jiang and Zhi Jin and Ge Li},
+      year={2024},
+      eprint={2308.10088},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2308.10088}, 
+}
+```
